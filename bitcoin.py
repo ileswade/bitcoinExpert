@@ -49,12 +49,21 @@ class Blockchain:
         
         self.chain.append(new_block)
 
+# Create blockchain and mine some blocks
+blockchain = Blockchain(difficulty=5)  # Increase for more challenge
+blockchain.mine_block("First Transaction: Alice sends 5 BTC to Bob")
+blockchain.mine_block("Second Transaction: Bob sends 3 BTC to Charlie")
 
-def main():
-    # Create blockchain and mine some blocks
-    blockchain = Blockchain(difficulty=4)  # Increase for more challenge
-    blockchain.mine_block("First Transaction: Alice sends 5 BTC to Bob")
-    blockchain.mine_block("Second Transaction: Bob sends 3 BTC to Charlie")
 
-if __name__ == "__main__":
-    main()
+
+
+
+
+
+# data = "Hello Iles how are you1"
+
+# def hash(d):
+#     return hashlib.sha256(data.encode()).hexdigest()
+
+# print(hash(data))   
+
